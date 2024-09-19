@@ -12,7 +12,7 @@
 - React
 - SQL
 - MongoDB
-= PostgreeSQL
+- PostgreeSQL
 - JavaScript
 - C#
 - Next.js
@@ -21,3 +21,43 @@
 - PHP
 - Laravel
 - Yii2
+
+
+### 🚀 Experiência Profissional
+
+
+#### AllSurge 
+
+#### Deseveloper backend 
+julho de 2024 - Presente 
+
+
+- Desenvolvimento e implementação de soluções ERP, TMS, WMS, SDK e averbação.
+  
+
+####  Alias Consig 
+
+#### Especialista em Software 
+Agosto de 2019 - Julho de 2022 
+
+- Desenvolviemnto de artevatos em SLQ e compnentes C#.
+- Desenvolvimento de testes únitarios (TDDs).
+
+
+### 🎓 Formação Acadêmica 
+- Pós Graduação Em Desenvolviemnto de Aplicativos Mobile (2023 - 2024)
+- Tecnologo em Gestão de TI - Faculdade Educacional de Colombo (2021- 2023)
+
+
+### 📫 Contato 
+- LinkedIn: Meu LinkedIn
+- GitHub: Meu GitHub
+- Email: bortotti@live.com
+- Localização: Curitiba, PR 
+-Telefone: (41)9823-6149
+
+
+
+
+
+
