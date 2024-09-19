@@ -3,8 +3,8 @@
 ## Sobre Mim
 
 # Sou um Entusiasta apaixonado por tecnologia, com experiência em Diversas Linguagens 
-de programação. Minha missão é criar soluções de software personalizadas que alinhem 
-expertise técnica com as necessidades específicas dos clientes.
+# de programação. Minha missão é criar soluções de software personalizadas que alinhem 
+# expertise técnica com as necessidades específicas dos clientes.
 
 # 💻 Linguagens de Programação
 
