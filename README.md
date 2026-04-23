@@ -56,7 +56,5 @@
 ## 📫 Contato
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vinicius-de-avilla/)
 - Email: vinicius.d.avilla@hotmail.com
-- Localização: Curitiba, PR 
- -Telefone: (41)9823-6149
 
 
