@@ -12,13 +12,13 @@
 
 - Python
 - Node.js
+- Kotlin
 - TypeScript
 - React
 - SQL
 - MongoDB
 - PostgreeSQL
-- aJavaScript
-- C#
+- JavaScript
 - Next.js
 - Java
 - SpringBoot
@@ -30,11 +30,18 @@
 ## 🚀 Experiência Profissional
 
 
+#### Montreal - prodemge
+
+`Agosto de 2024 . Outubro de 2025`
+
+- Desenvolvimento e implementação de soluções ERP, TMS, WMS, SDK e averbação.
+  
+
 #### AllSurge 
 
 #### Deseveloper backend
 
-`julho de 2024 - Presente `
+`Setembro de 2022 . Outubro de 2024`
 
 - Desenvolvimento e implementação de soluções ERP, TMS, WMS, SDK e averbação.
   
@@ -42,10 +49,11 @@
 ####  Alias Consig 
 
 #### Especialista em Software 
-`Agosto de 2019 - Julho de 2022 `
+`Agosto de 2019 - Julho de 2022`
 
-- Desenvolviemnto de artevatos em SLQ e compnentes C#.
+- Desenvolviemnto de artevatos em SLQ e componentes Java.
 - Desenvolvimento de testes únitarios (TDDs).
+  
 
 ##
 ## 🎓 Formação Acadêmica 
