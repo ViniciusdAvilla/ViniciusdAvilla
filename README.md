@@ -1,7 +1,4 @@
-
-
 # 👋 Olá, eu sou Vinicius De Avilla
-
 
 
 ## Sobre  Mim
