@@ -49,7 +49,7 @@
 #### Especialista em Software 
 `Agosto de 2019 - Julho de 2022`
 
-- Desenvolviemento de artevatos em SLQ e componentes Java.
+- Desenvolvimento de artevatos em SLQ e componentes Java.
 - Desenvolvimento de testes únitarios (TDDs).
   
 
