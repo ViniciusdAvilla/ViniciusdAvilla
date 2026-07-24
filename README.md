@@ -10,7 +10,7 @@
 
 ## 💻 Linguagens de Programação
 
-- Python
+- Java
 - Node.js
 - Kotlin
 - TypeScript
@@ -20,7 +20,7 @@
 - PostgreeSQL
 - JavaScript
 - Next.js
-- Java
+- Mysql
 - SpringBoot
 - PHP
 - Laravel
