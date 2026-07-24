@@ -31,7 +31,6 @@
 
 
 #### Montreal - prodemge
-
 `Agosto de 2024 . Outubro de 2025`
 
 - Desenvolvimento e implementação de soluções ERP, TMS, WMS, SDK e averbação.
@@ -40,7 +39,6 @@
 #### AllSurge 
 
 #### Deseveloper backend
-
 `Setembro de 2022 . Outubro de 2024`
 
 - Desenvolvimento e implementação de soluções ERP, TMS, WMS, SDK e averbação.
@@ -51,7 +49,7 @@
 #### Especialista em Software 
 `Agosto de 2019 - Julho de 2022`
 
-- Desenvolviemnto de artevatos em SLQ e componentes Java.
+- Desenvolviemento de artevatos em SLQ e componentes Java.
 - Desenvolvimento de testes únitarios (TDDs).
   
 
