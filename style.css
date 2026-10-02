@@ -43,3 +43,19 @@ body{background:#fff;color:var(--ink)}
 .footer{background:#fff}
 .foot-inner p,.foot-inner>a:last-child{color:#617c68}
 @media(max-width:480px){.page-label{padding-top:25px;padding-bottom:20px}}
+
+/* Visual branco compacto; apenas marca, fotografia e consentimento */
+html,body{background:#fff!important;color:#183b2e!important}
+.header,.footer{background:#fff!important}
+.header .topbar{justify-content:center}
+main.shell{padding-top:32px}
+.main-grid{align-items:start}
+.photo{height:410px;min-height:410px}
+.photo-caption{padding:18px 24px}
+.photo-caption h2{font-size:16px;margin:0}
+.photo-icon{display:none}
+.consent-card{padding-top:30px}
+.consent-card h2{margin-top:0}
+.footer{margin-top:34px;border-top:1px solid #e3ece5}
+.footer .foot-inner{justify-content:center}
+@media(max-width:880px){main.shell{padding-top:23px}.photo{height:280px;min-height:280px}.main-grid{gap:16px}}
