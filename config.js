@@ -1,7 +1,7 @@
-/* Configuração pública (sem senhas). Preencher só após revisão jurídica e confirmação do número WhatsApp OFICIAL. */
+/* Configuração pública, sem senhas. Ativar somente após incluir foto, responsável legal e revisão do termo. */
 window.ETHOS_CONFIG = {
- photo_url: "", // URL HTTPS da fotografia EXATA e autorizada para aparecer no formulário
- legal_name: "", // Razão social/nome do responsável pela imagem
- whatsapp_number: "", // Exemplo: 5541999999999 (código do país + DDD + telefone, sem sinais)
- production_review_complete: false // Mudar para true somente após conferir foto, número e termo
+ photo_url: "", // URL HTTPS da fotografia EXATA do banner
+ legal_name: "", // Razão social ou nome do responsável jurídico
+ whatsapp_number: "5541991363791", // WhatsApp informado para receber as autorizações
+ production_review_complete: false // Mudar para true após conferir foto e termo
 };
