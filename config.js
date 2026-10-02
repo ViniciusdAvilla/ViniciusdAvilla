@@ -1,8 +1,7 @@
-/* Configure SOMENTE após confirmar o e-mail, o titular da empresa, a foto REAL e a revisão jurídica. Não coloque chaves secretas aqui. */
+/* Configuração pública (sem senhas). Preencher só após revisão jurídica e confirmação do número WhatsApp OFICIAL. */
 window.ETHOS_CONFIG = {
- photo_url: "", // URL HTTPS da fotografia EXATA do banner, autorização prévia para exibição na tela
- legal_name: "", // Nome jurídico/CNPJ do responsável pelo tratamento
- contact_email: "", // Contato de revogação / titular dos dados
- form_endpoint: "", // Ex.: https://formsubmit.co/ajax/SEU-ENDERECO-VERIFICADO
- production_review_complete: false
+ photo_url: "", // URL HTTPS da fotografia EXATA e autorizada para aparecer no formulário
+ legal_name: "", // Razão social/nome do responsável pela imagem
+ whatsapp_number: "", // Exemplo: 5541999999999 (código do país + DDD + telefone, sem sinais)
+ production_review_complete: false // Mudar para true somente após conferir foto, número e termo
 };
