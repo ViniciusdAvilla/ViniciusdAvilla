@@ -1,7 +1,9 @@
-/* Configuração pública, sem senhas. Ativar somente após incluir foto, responsável legal e revisão do termo. */
+/* Chave pública do Google reCAPTCHA v2. A chave SECRETA fica somente no Render backend. */
 window.ETHOS_CONFIG = {
- photo_url: "", // URL HTTPS da fotografia EXATA do banner
- legal_name: "", // Razão social ou nome do responsável jurídico
- whatsapp_number: "5541991363791", // WhatsApp informado para receber as autorizações
- production_review_complete: false // Mudar para true após conferir foto e termo
+  photo_url: "/assets/encontro-parque.webp",
+  legal_name: "", // Nome jurídico do responsável: confirmar antes de coletar autorizações
+  whatsapp_number: "5541991363791",
+  recaptcha_site_key: "", // Google reCAPTCHA v2 checkbox para ethos-tribo-autorizacao.onrender.com
+  verify_url: "", // Endereço do backend gratuito Render, terminado em /verify
+  production_review_complete: false // Habilitar após revisão jurídica, confirmação da foto e chave do Google
 };
