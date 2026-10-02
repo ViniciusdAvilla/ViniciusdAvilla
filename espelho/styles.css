@@ -174,3 +174,58 @@ body{margin:0}
 @media(max-width:900px){#ethos-mirror .container{width:min(100% - 46px,740px)}#ethos-mirror .primary,#ethos-mirror .head-search,#ethos-mirror .country{display:none}#ethos-mirror .navline{min-height:70px}#ethos-mirror .hamburger{display:flex}#ethos-mirror .auth{margin-left:auto}#ethos-mirror .hero{grid-template-columns:1fr;gap:48px;padding-block:59px;min-height:0}#ethos-mirror .hero h1{max-width:650px}#ethos-mirror .hero-media{max-width:640px;width:100%;margin-inline:auto}#ethos-mirror .about{grid-template-columns:1fr;gap:37px}#ethos-mirror .section-media img{height:420px}#ethos-mirror .section{padding-block:67px}#ethos-mirror .territories{grid-template-columns:repeat(2,1fr)}#ethos-mirror .territory-art{height:200px}#ethos-mirror .territory-body>p{min-height:0}#ethos-mirror .manifesto-grid{grid-template-columns:1fr;gap:40px}#ethos-mirror .manifesto-img img{height:350px}#ethos-mirror .code-grid{grid-template-columns:repeat(2,1fr)}#ethos-mirror .footer-grid{grid-template-columns:2fr 1fr;gap:25px}#ethos-mirror .steps{grid-template-columns:repeat(2,1fr)}#ethos-mirror .group-tiles{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){#ethos-mirror .container{width:calc(100% - 34px)}#ethos-mirror .brand{font-size:21px}#ethos-mirror .brand-symbol{width:31px;height:31px}#ethos-mirror .header .auth{font-size:12px;padding:8px 13px}#ethos-mirror .hero{padding-block:44px;gap:34px}#ethos-mirror .hero h1{font-size:clamp(38px,10.4vw,51px);margin-top:19px}#ethos-mirror .hero h2{font-size:18px}#ethos-mirror .hero-media{height:380px;padding-right:6px}#ethos-mirror .hero-image{border-radius:150px 17px 17px 17px}#ethos-mirror .hero-media-emblem{width:97px;height:97px;left:-4px;border:6px solid var(--base);font-size:15px}#ethos-mirror .hero-media-emblem span{font-size:15px;bottom:13px}#ethos-mirror .section-media img{height:315px;border-radius:16px 120px 16px 16px}#ethos-mirror .section h2{font-size:32px}#ethos-mirror .section-heading{display:block}#ethos-mirror .territories{gap:10px}#ethos-mirror .territory-art{height:122px}#ethos-mirror .territory-body{padding:14px}#ethos-mirror .territory-top{display:block}#ethos-mirror .territory-top h3{font-size:18px;margin-bottom:6px}#ethos-mirror .territory-top span{display:inline-block}#ethos-mirror .territory-body>p{font-size:11px;margin:11px 0}#ethos-mirror .chips span{font-size:10px}#ethos-mirror .manifesto-band{padding:60px 0}#ethos-mirror .manifesto-band h2{font-size:37px}#ethos-mirror .manifesto-img img{height:290px;border-radius:90px 16px 16px 16px}#ethos-mirror .code-grid{gap:16px}#ethos-mirror .code-grid h3{font-size:16px}#ethos-mirror .code-grid p{font-size:12px}#ethos-mirror .final-cta{display:block;padding:33px 23px;margin-bottom:55px}#ethos-mirror .final-cta .button{margin-top:24px}#ethos-mirror .footer-grid{grid-template-columns:repeat(2,1fr);gap:29px;padding:43px 0 38px}#ethos-mirror .footer-about{grid-column:1/-1}#ethos-mirror .footer-bottom{display:block}#ethos-mirror .footer-bottom span{display:block;margin:4px 0}#ethos-mirror .pagehead{padding-block:48px 37px}#ethos-mirror .pagehead h1{font-size:46px}#ethos-mirror .pagehead p{font-size:14px}#ethos-mirror .events{grid-template-columns:1fr}#ethos-mirror .event{max-width:none}#ethos-mirror .current{display:block}#ethos-mirror .current .button{margin-top:16px}#ethos-mirror .group-tiles{grid-template-columns:1fr;gap:11px}#ethos-mirror .group-tile{min-height:0}#ethos-mirror .groups-search-head{display:block}#ethos-mirror .inline-search{margin-top:20px}#ethos-mirror .inline-search input{min-width:0;flex:1}#ethos-mirror .inline-search .button{padding:9px 13px}#ethos-mirror .prose{padding-block:40px 70px}#ethos-mirror .prose p{font-size:16px}#ethos-mirror .prose .lead{font-size:20px}#ethos-mirror .manifesto-hero img{height:290px}#ethos-mirror .steps{grid-template-columns:1fr}#ethos-mirror .pillars{grid-template-columns:1fr}#ethos-mirror .code-grid.seven{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){#ethos-mirror *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Horizontal main photograph, same original homepage typography/navigation.
+   Scoped to the homepage to prevent affecting other shared pages. */
+@media (min-width: 1101px) {
+  #ethos-mirror .hero.hero--wide.container {
+    width:min(1440px,calc(100% - 88px));
+    display:grid;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);
+    gap:clamp(30px,3.6vw,64px);
+    align-items:center;
+    min-height:640px;
+    padding-block:58px 66px;
+  }
+  #ethos-mirror .hero--wide .hero-copy{min-width:0;max-width:640px}
+  #ethos-mirror .hero--wide h1{font-size:clamp(43px,4.4vw,67px);letter-spacing:-.055em;line-height:1.075}
+  #ethos-mirror .hero--wide .hero-media{
+    width:100%;height:auto;aspect-ratio:16/9;min-height:0;padding:0;
+  }
+  #ethos-mirror .hero--wide .hero-image{
+    width:100%;height:100%;aspect-ratio:16/9;object-fit:cover;
+    object-position:center center;border-radius:104px 22px 22px 22px;
+    box-shadow:0 15px 42px rgba(22,55,33,.16)
+  }
+  #ethos-mirror .hero--wide .hero-media-emblem{bottom:-24px;left:-28px}
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  #ethos-mirror .hero.hero--wide.container{
+    width:calc(100% - 72px);grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+    gap:30px;min-height:560px;padding-block:55px
+  }
+  #ethos-mirror .hero--wide h1{font-size:clamp(39px,4.4vw,53px);line-height:1.08}
+  #ethos-mirror .hero--wide .hero-media{height:auto;aspect-ratio:16/10;padding:0}
+  #ethos-mirror .hero--wide .hero-image{width:100%;height:100%;border-radius:72px 20px 20px 20px;object-position:center}
+  #ethos-mirror .hero--wide .hero-media-emblem{left:-15px;bottom:-16px;width:106px;height:106px}
+}
+@media (max-width: 900px) {
+  #ethos-mirror .hero.hero--wide{gap:28px;padding-block:44px 60px}
+  #ethos-mirror .hero--wide .hero-media{
+    width:100%;max-width:none;height:auto;aspect-ratio:16/9;
+    padding:0;margin:4px 0 0
+  }
+  #ethos-mirror .hero--wide .hero-image{
+    width:100%;height:100%;aspect-ratio:16/9;
+    border-radius:72px 16px 16px 16px;object-fit:cover;object-position:center
+  }
+  #ethos-mirror .hero--wide .hero-media-emblem{
+    left:-9px;bottom:-24px;width:87px;height:87px;border-width:6px;font-size:14px
+  }
+  #ethos-mirror .hero--wide .hero-media-emblem span{bottom:11px;font-size:13px}
+}
+@media (max-width: 600px) {
+  #ethos-mirror .hero--wide .hero-media{aspect-ratio:16/9}
+  #ethos-mirror .hero--wide .hero-image{border-radius:44px 12px 12px 12px}
+  #ethos-mirror .hero--wide h1{font-size:clamp(36px,10vw,49px)}
+}
