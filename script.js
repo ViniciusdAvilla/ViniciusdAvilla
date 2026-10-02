@@ -96,7 +96,7 @@
       });
       filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === selected)));
       $('#event-empty').hidden = count > 0;
-      $('#result-count').textContent = `${count} ${count === 1 ? 'encontro' : 'encontros'}`;
+      $('#result-count').textContent = `${count} ${document.documentElement.lang.startsWith('en') ? (count === 1 ? 'event' : 'events') : (count === 1 ? 'encontro' : 'encontros')}`;
       if (syncUrl && (location.protocol === 'http:' || location.protocol === 'https:')) {
         const url = new URL(location.href);
         for (const [key, value] of [['territorio', selected === 'all' ? '' : selected], ['q', search.value.trim()], ['city', city.value === 'all' ? '' : city.value]]) {
@@ -111,6 +111,8 @@
     city.addEventListener('change', () => filter());
     $('#reset-filters').addEventListener('click', () => { selected = 'all'; search.value = ''; city.value = 'all'; filter(); search.focus(); });
     filter(false);
+    document.addEventListener('ethos:language-changed', () => filter(false));
+    document.addEventListener('ethos:language-changed', () => filter(false));
   }
 
   const dialog = $('#event-dialog');
