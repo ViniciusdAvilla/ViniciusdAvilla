@@ -4,6 +4,6 @@ window.ETHOS_CONFIG = {
   legal_name: "", // Nome jurídico do responsável: confirmar antes de coletar autorizações
   whatsapp_number: "5541991363791",
   recaptcha_site_key: "", // Google reCAPTCHA v2 checkbox para ethos-tribo-autorizacao.onrender.com
-  verify_url: "", // Endereço do backend gratuito Render, terminado em /verify
+  verify_url: "https://ethos-captcha-verifier.onrender.com/verify", // Endereço do backend gratuito Render, terminado em /verify
   production_review_complete: false // Habilitar após revisão jurídica, confirmação da foto e chave do Google
 };
