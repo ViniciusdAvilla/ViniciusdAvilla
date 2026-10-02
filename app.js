@@ -4,7 +4,7 @@ const number=String(cfg.whatsapp_number||'').replace(/\D/g,''),siteKey=String(cf
 let widgetId=null,captchaResponse='',imageReady=false,busy=false;
 if(cfg.legal_name)legal.textContent=cfg.legal_name;
 if(cfg.photo_url){photo.src=cfg.photo_url;}else{photo.src='assets/encontro-parque.webp';}
-photo.addEventListener('load',()=>{imageReady=!!photo.naturalWidth;update()});photo.addEventListener('error',()=>{imageReady=false;msg.textContent='Imagem indisponível. Solicite a fotografia oficial ao responsável.';update()});
+photo.addEventListener('load',()=>{imageReady=!!photo.naturalWidth;update()});if(photo.complete && photo.naturalWidth){imageReady=true;}photo.addEventListener('error',()=>{imageReady=false;msg.textContent='Imagem indisponível. Solicite a fotografia oficial ao responsável.';update()});
 const ready=()=>Boolean(cfg.production_review_complete===true && cfg.legal_name && siteKey && /^https:\/\/[^ ]+\/verify$/.test(verifyUrl) && number.length>=12 && number.length<=15);
 function update(){button.disabled=!ready()||!imageReady||!agree.checked||!captchaResponse||busy}
 function show(text){msg.textContent=text}
@@ -33,7 +33,7 @@ form.addEventListener('submit',async(ev)=>{
   const declaration=['AUTORIZAÇÃO DE USO DE IMAGEM — ETHOS TRIBO','Protocolo de referência: '+protocol,'Data UTC: '+new Date().toISOString(),'Responsável: '+cfg.legal_name,'Fotografia: '+original,'Termo: versão 2.0','Uso: exclusivamente no banner principal de https://www.ethostribo.com.br/ por até 12 meses, sem outras campanhas, salvo revogação.','', 'Confirmo que sou maior de idade, apareço na fotografia apresentada e li o termo. Autorizo livre e expressamente o uso delimitado acima. Sei que posso revogar gratuitamente pelos canais oficiais.','', 'Envio esta declaração voluntariamente pelo meu WhatsApp.'];
   const url='https://wa.me/'+number+'?text='+encodeURIComponent(declaration.join('\n'));
   show('Verificação concluída. O WhatsApp será aberto: envie a mensagem para registrar sua autorização. Abrir o WhatsApp não significa que ela já foi enviada.');
-  const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();
+  window.location.assign(url);
  }catch(err){show(err.message||'Erro de validação. Tente novamente.')}
  finally{busy=false;captchaResponse='';if(widgetId!==null && window.grecaptcha)grecaptcha.reset(widgetId);update();}
 });
