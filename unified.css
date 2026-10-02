@@ -154,3 +154,96 @@ html[data-theme="light"] .icon-button{color:#28573a}
 @media(prefers-reduced-motion:reduce){.theme-control,.lang-option{transition:none!important}}
 @media(min-width:701px){.floating-label{right:38px}}
 @media(max-width:700px){.floating-label{right:4px}}
+
+
+/* ETHOS / restrained visual system: shared 3D scene, quieter color field.
+   Backgrounds no longer wash across entire pages; depth comes from geometry, not big gradients. */
+:root{
+  --ethos-canvas:#0b1b16;
+  --ethos-surface:#153027;
+  --ethos-surface-raised:#1b392e;
+  --ethos-soft-shade:rgba(158,208,140,.075);
+}
+html[data-theme="light"]{
+  --ethos-canvas:#f2f5ed;
+  --ethos-surface:#fbfcf7;
+  --ethos-surface-raised:#eaf0e5;
+  --ethos-soft-shade:rgba(77,145,82,.055);
+}
+body,html[data-theme="light"] body{
+  background:var(--ethos-canvas);
+  background-image:none;
+}
+body::before{opacity:.035}
+html[data-theme="light"] body::before{opacity:.028}
+.hero::before,.page-heading::before,.groups-hero::before,
+html[data-theme="light"] .hero::before,
+html[data-theme="light"] .page-heading::before,
+html[data-theme="light"] .groups-hero::before{
+  background:none;
+}
+.hero-scene::before{background:radial-gradient(circle,rgba(143,193,128,.11),transparent 68%);filter:blur(35px)}
+html[data-theme="light"] .hero-scene::before{background:radial-gradient(circle,rgba(98,154,102,.08),transparent 68%)}
+.reality-portal{
+  background:#10281f;
+  box-shadow:inset 0 1px rgba(200,240,190,.055),inset 0 -1px rgba(200,240,190,.055);
+}
+html[data-theme="light"] .reality-portal{background:#e6ede0}
+.portal-grain{opacity:.035}
+.portal-ambient{opacity:.52}
+html[data-theme="light"] .portal-ambient{opacity:.4}
+.portal-ring-main{box-shadow:inset 0 0 18px rgba(172,255,112,.09),0 0 16px rgba(159,239,119,.13),0 38px 55px rgba(0,0,0,.17)}
+.territory-card,.territory-card:hover,.search-panel,.event-card,dialog,.agenda-aside,.group-type,.empty-state{
+  background:var(--ethos-surface);
+}
+.territory-card:hover{background:var(--ethos-surface-raised)}
+html[data-theme="light"] .territory-card,
+html[data-theme="light"] .search-panel,
+html[data-theme="light"] .event-card,
+html[data-theme="light"] dialog,
+html[data-theme="light"] .agenda-aside,
+html[data-theme="light"] .group-type,
+html[data-theme="light"] .empty-state{background:var(--ethos-surface)}
+html[data-theme="light"] .territory-card:hover{background:var(--ethos-surface-raised)}
+.icon-tile,.aprendizado .icon-tile,.contribuicao .icon-tile,.convivio .icon-tile{background:#274a35}
+html[data-theme="light"] .icon-tile,
+html[data-theme="light"] .aprendizado .icon-tile,
+html[data-theme="light"] .contribuicao .icon-tile,
+html[data-theme="light"] .convivio .icon-tile{background:#e1eed6}
+.join-section{background:#bde88a;box-shadow:0 19px 40px rgba(2,28,16,.16)}
+html[data-theme="light"] .join-section{background:#e2efcf;box-shadow:0 18px 32px rgba(21,55,30,.1),inset 0 0 0 1px rgba(81,114,57,.08)}
+.pillars-section{background:#132f25}
+html[data-theme="light"] .pillars-section{background:#e8efe5}
+.event-art{background:#29533a}
+html[data-theme="light"] .event-art{background:#427951}
+.page-symbol{background:#1e4533}
+html[data-theme="light"] .page-symbol{background:#e2f0dc}
+.manifesto-shade{background:rgba(4,23,16,.66)}
+.manifesto-hero::before{background:rgba(3,19,14,.69)}
+/* Preserve high-contrast captions for text placed over photography on the light theme. */
+html[data-theme="light"] .manifesto-hero::before{background:rgba(8,32,19,.60)}
+html[data-theme="light"] .manifesto-shade{background:rgba(6,28,18,.61)}
+/* Keep the local spotlight only on the interactive hero and portal — never on the entire page. */
+.territory-card::before{opacity:0;transition:opacity .35s}
+.territory-card:hover::before{opacity:.3}
+html[data-theme="light"] .territory-card:hover::before{opacity:.22}
+/* Account indicator: appears only after an authenticated response from the real session API. */
+.auth-account{position:relative;display:inline-flex;align-items:center;gap:9px;min-width:0;max-width:185px;
+  padding:5px 10px 5px 5px;background:rgba(163,222,158,.075);border:1px solid rgba(213,247,186,.19);
+  border-radius:999px;transition:border-color .2s,background .2s}
+.auth-account:hover{background:rgba(163,222,158,.12);border-color:rgba(213,247,186,.32)}
+.auth-account[hidden]{display:none!important}
+.auth-photo,.auth-initials{width:34px;height:34px;flex:none;border-radius:50%;object-fit:cover;border:2px solid rgba(198,250,143,.7)}
+.auth-initials{display:grid;place-items:center;background:#c5e995;color:#163a25;font-weight:900;font-size:.9rem}
+.auth-photo[hidden],.auth-initials[hidden]{display:none!important}
+.auth-details{display:flex;flex-direction:column;min-width:0;line-height:1.2}
+.auth-name{color:#edf6e7;font-size:.77rem;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.auth-state{color:#b9d6b0;font-size:.62rem;font-weight:600;display:flex;align-items:center;gap:4px}
+.auth-state::before{content:'';width:5px;height:5px;border-radius:50%;background:#b8e777;box-shadow:0 0 0 2px rgba(169,232,113,.12)}
+html[data-theme="light"] .auth-account{background:#eaf3e4;border-color:#bad1b1}
+html[data-theme="light"] .auth-name{color:#244f36}
+html[data-theme="light"] .auth-state{color:#49784e}
+html[data-theme="light"] .auth-photo{border-color:#79af64}
+@media(max-width:1180px){.auth-account{max-width:120px}.auth-details{display:none}.auth-account{padding:4px}.auth-photo,.auth-initials{width:31px;height:31px}}
+@media(max-width:700px){.auth-account{max-width:35px;min-width:35px;padding:2px;background:transparent;border:0}.auth-photo,.auth-initials{width:31px;height:31px}}
+@media(max-width:370px){.auth-account{max-width:29px;min-width:29px}.auth-photo,.auth-initials{width:28px;height:28px}}
